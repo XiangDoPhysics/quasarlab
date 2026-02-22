@@ -1,5 +1,6 @@
 # QuasarAI
 
+
 **AI-powered physics research assistant.** Automating data analysis, error calculations, experimental design evaluation, and workflow optimization so researchers can focus on what matters most: discovery.
 
 Built on [Claude](https://www.anthropic.com/claude) by Anthropic, QuasarAI combines advanced language understanding with physics-first reasoning to deliver a rigorous, transparent, and extensible research tool.
