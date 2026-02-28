@@ -1,4 +1,4 @@
-from quasarlab.agent import run_agent
+from main import run_agent
 
 if __name__ == "__main__":
     query = input("QUASARlab > ")
