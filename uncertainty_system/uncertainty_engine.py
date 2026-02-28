@@ -15,7 +15,7 @@ import os
 import json
 import numpy as np
 
-from uncertainty_system.anthropic_api_v1 import ExperimentalAssistant
+from uncertainty_system.uncertainty_engine import ExperimentalAssistant
 
 from matplotlib.style import context
 from anthropic import Anthropic
