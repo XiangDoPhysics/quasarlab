@@ -1,0 +1,191 @@
+================================================================================
+PHYSICS EXPERIMENT UNCERTAINTIES LOG
+================================================================================
+Project      : [Project Name / QUASARlab Experiment ID]
+Researcher   : [Name]
+Date         : [YYYY-MM-DD]
+Experiment   : [Brief Description]
+Log Version  : 1.0
+================================================================================
+
+--------------------------------------------------------------------------------
+SECTION 1: INSTRUMENT SPECIFICATIONS & SYSTEMATIC UNCERTAINTIES
+--------------------------------------------------------------------------------
+
+[INST-001] Digital Multimeter (DMM)
+  Manufacturer / Model : [e.g., Keithley 2450]
+  Quantity             : Voltage (V)
+  Range                : [e.g., 0 – 200 V]
+  Resolution           : [e.g., 0.001 V]
+  Accuracy (±)         : [e.g., 0.025% reading + 0.005% range]
+  Systematic Error     : [e.g., ±0.002 V at 5 V]
+  Last Calibrated      : [YYYY-MM-DD]
+  Notes                : [e.g., Zero-offset corrected before measurement]
+
+[INST-002] Oscilloscope
+  Manufacturer / Model : [e.g., Tektronix TDS2024C]
+  Quantity             : Time / Voltage
+  Timebase Accuracy    : [e.g., ±0.01% of reading]
+  Vertical Accuracy    : [e.g., ±3% of full scale]
+  Systematic Error     : [e.g., ±0.5 mV at 10 mV/div]
+  Last Calibrated      : [YYYY-MM-DD]
+  Notes                :
+
+[INST-003] Temperature Sensor
+  Manufacturer / Model : [e.g., PT100 RTD]
+  Quantity             : Temperature (°C / K)
+  Range                : [e.g., -50 to 300 °C]
+  Resolution           : [e.g., 0.01 °C]
+  Systematic Error     : [e.g., ±0.15 + 0.002|T| °C]
+  Last Calibrated      : [YYYY-MM-DD]
+  Notes                :
+
+[INST-004] [Add additional instruments as needed]
+
+--------------------------------------------------------------------------------
+SECTION 2: RANDOM UNCERTAINTIES (STATISTICAL)
+--------------------------------------------------------------------------------
+
+[RAND-001] Measurement: [e.g., Forward Voltage Drop (V_f)]
+  Number of Trials (N) : [e.g., 10]
+  Mean (x̄)            : [e.g., 0.672 V]
+  Std Deviation (σ)    : [e.g., 0.004 V]
+  Std Error (σ/√N)     : [e.g., 0.001265 V]
+  95% CI (±2σ/√N)      : [e.g., ±0.00253 V]
+  Notes                : [e.g., Gaussian distribution confirmed via Q-Q plot]
+
+[RAND-002] Measurement: [e.g., Threshold Voltage (V_th)]
+  Number of Trials (N) :
+  Mean (x̄)            :
+  Std Deviation (σ)    :
+  Std Error (σ/√N)     :
+  95% CI (±2σ/√N)      :
+  Notes                :
+
+[RAND-003] [Add additional measurements as needed]
+
+--------------------------------------------------------------------------------
+SECTION 3: PROPAGATED UNCERTAINTIES (DERIVED QUANTITIES)
+--------------------------------------------------------------------------------
+
+Formula Key:
+  For f(x, y, z, ...): δf = √[(∂f/∂x · δx)² + (∂f/∂y · δy)² + ...]
+
+[PROP-001] Derived Quantity : [e.g., Power Dissipation P = V × I]
+  Formula                   : P = V × I
+  Variables & Uncertainties :
+    V  = [value] ± δV = [uncertainty]
+    I  = [value] ± δI = [uncertainty]
+  Propagation               : δP = P × √[(δV/V)² + (δI/I)²]
+  Result                    : P = [value] ± δP = [value] [units]
+  Relative Uncertainty      : [e.g., 1.8%]
+  Notes                     :
+
+[PROP-002] Derived Quantity : [e.g., Carrier Mobility μ = σ/(n·e)]
+  Formula                   :
+  Variables & Uncertainties :
+    [var1] = [value] ± [uncertainty]
+    [var2] = [value] ± [uncertainty]
+  Propagation               :
+  Result                    : [value] ± [uncertainty] [units]
+  Relative Uncertainty      :
+  Notes                     :
+
+[PROP-003] [Add additional derived quantities as needed]
+
+--------------------------------------------------------------------------------
+SECTION 4: ENVIRONMENTAL & EXTERNAL UNCERTAINTIES
+--------------------------------------------------------------------------------
+
+[ENV-001] Ambient Temperature
+  Nominal Value      : [e.g., 295 K (22 °C)]
+  Fluctuation Range  : [e.g., ±1.5 K during experiment]
+  Effect on Measured : [e.g., Resistance shift ΔR/ΔT ≈ 0.4%/K → ±0.6% on R]
+  Mitigation         : [e.g., Temperature-controlled enclosure used]
+
+[ENV-002] Electromagnetic Interference (EMI)
+  Source             : [e.g., Lab HVAC motor, nearby RF equipment]
+  Observed Noise     : [e.g., ±0.3 mV on signal lines]
+  Mitigation         : [e.g., Shielded coaxial cables, grounding verified]
+
+[ENV-003] Vibration / Mechanical Noise
+  Source             :
+  Observed Effect    :
+  Mitigation         :
+
+[ENV-004] Power Supply Ripple
+  Ripple Voltage     : [e.g., ±2 mV at 5 V DC]
+  Effect             :
+  Mitigation         :
+
+--------------------------------------------------------------------------------
+SECTION 5: HUMAN / PROCEDURAL UNCERTAINTIES
+--------------------------------------------------------------------------------
+
+[PROC-001] Parallax Error
+  Applicable To  : [e.g., Analog scale readings]
+  Estimated Error: [e.g., ±0.5 mm]
+  Mitigation     : [e.g., Perpendicular line of sight maintained]
+
+[PROC-002] Sample Preparation
+  Step           : [e.g., Semiconductor wafer dicing]
+  Tolerance      : [e.g., ±10 μm cut width]
+  Effect         :
+
+[PROC-003] Timing / Trigger Jitter
+  Source         : [e.g., Manual trigger for transient capture]
+  Estimated Error: [e.g., ±2 ms]
+  Mitigation     :
+
+--------------------------------------------------------------------------------
+SECTION 6: TOTAL COMBINED UNCERTAINTY SUMMARY
+--------------------------------------------------------------------------------
+
+  Quantity       Units    Best Estimate    u_systematic    u_random    u_combined    Rel. Unc. (%)
+  -------------- -------- ---------------- --------------- ----------- ------------- -------------
+  [Quantity 1]   [unit]   [value]          ±[sys]          ±[rand]     ±[comb]       [%]
+  [Quantity 2]   [unit]   [value]          ±[sys]          ±[rand]     ±[comb]       [%]
+  [Quantity 3]   [unit]   [value]          ±[sys]          ±[rand]     ±[comb]       [%]
+
+Note: u_combined = √(u_systematic² + u_random²)
+Coverage factor k=2 used for 95% confidence level (assuming normal distribution).
+
+--------------------------------------------------------------------------------
+SECTION 7: DATA QUALITY FLAGS
+--------------------------------------------------------------------------------
+
+Flag Codes:
+  [OK]   - Measurement within expected uncertainty bounds
+  [WARN] - Measurement approaching uncertainty limit; review advised
+  [ERR]  - Outlier detected; data point excluded from analysis
+  [CAL]  - Calibration drift suspected; instrument rechecked
+
+  Trial  Timestamp            Quantity       Value       Flag    Remarks
+  ------ -------------------- -------------- ----------- ------- -------------------
+  001    [YYYY-MM-DD HH:MM]   [Quantity]     [value]     [OK]    
+  002    [YYYY-MM-DD HH:MM]   [Quantity]     [value]     [WARN]  [Reason]
+  003    [YYYY-MM-DD HH:MM]   [Quantity]     [value]     [ERR]   [Excluded: reason]
+
+--------------------------------------------------------------------------------
+SECTION 8: CHANGE LOG
+--------------------------------------------------------------------------------
+
+  [YYYY-MM-DD] v1.0  - Initial log created. [Researcher Name]
+  [YYYY-MM-DD] v1.1  - [Change description]. [Researcher Name]
+  [YYYY-MM-DD] v1.2  - [Change description]. [Researcher Name]
+
+--------------------------------------------------------------------------------
+SECTION 9: REFERENCES & STANDARDS
+--------------------------------------------------------------------------------
+
+  [1] JCGM 100:2008 — GUM: Guide to the Expression of Uncertainty in Measurement.
+      BIPM / ISO. https://www.bipm.org/utils/common/documents/jcgm/JCGM_100_2008_E.pdf
+
+  [2] Taylor, J.R. (1997). An Introduction to Error Analysis (2nd ed.).
+      University Science Books.
+
+  [3] [Additional instrument calibration standard or lab SOP reference]
+
+================================================================================
+END OF LOG
+================================================================================
